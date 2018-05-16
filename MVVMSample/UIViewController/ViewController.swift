@@ -25,7 +25,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        return tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        return tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as! CustomTableViewCell
     }
 }
 

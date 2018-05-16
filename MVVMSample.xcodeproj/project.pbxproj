@@ -13,6 +13,7 @@
 		DFDCB25820ACA4CE00C83082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFDCB25720ACA4CE00C83082 /* Assets.xcassets */; };
 		DFDCB25B20ACA4CE00C83082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDCB25920ACA4CE00C83082 /* LaunchScreen.storyboard */; };
 		DFDCB26820ACA82A00C83082 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDCB26720ACA82A00C83082 /* CustomTableViewCell.xib */; };
+		DFDCB26A20ACAA8200C83082 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCB26920ACAA8200C83082 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DFDCB25A20ACA4CE00C83082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFDCB25C20ACA4CE00C83082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFDCB26720ACA82A00C83082 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		DFDCB26920ACAA8200C83082 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				DFDCB26720ACA82A00C83082 /* CustomTableViewCell.xib */,
+				DFDCB26920ACAA8200C83082 /* CustomTableViewCell.swift */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFDCB26A20ACAA8200C83082 /* CustomTableViewCell.swift in Sources */,
 				DFDCB25320ACA4CC00C83082 /* ViewController.swift in Sources */,
 				DFDCB25120ACA4CC00C83082 /* AppDelegate.swift in Sources */,
 			);
