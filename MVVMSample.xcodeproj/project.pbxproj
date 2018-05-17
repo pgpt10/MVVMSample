@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD523FEB20AD5C1E0041729C /* LibraryList.json in Resources */ = {isa = PBXBuildFile; fileRef = BD523FEA20AD5C1E0041729C /* LibraryList.json */; };
+		BD523FF520AD602E0041729C /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD523FF420AD602E0041729C /* ViewControllerViewModel.swift */; };
+		BD523FF720AD61530041729C /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD523FF620AD61530041729C /* Library.swift */; };
+		BD523FFB20AD645E0041729C /* LibraryListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD523FFA20AD645E0041729C /* LibraryListCellViewModel.swift */; };
 		DFDCB25120ACA4CC00C83082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCB25020ACA4CC00C83082 /* AppDelegate.swift */; };
 		DFDCB25320ACA4CC00C83082 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCB25220ACA4CC00C83082 /* ViewController.swift */; };
 		DFDCB25620ACA4CC00C83082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDCB25420ACA4CC00C83082 /* Main.storyboard */; };
 		DFDCB25820ACA4CE00C83082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFDCB25720ACA4CE00C83082 /* Assets.xcassets */; };
 		DFDCB25B20ACA4CE00C83082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDCB25920ACA4CE00C83082 /* LaunchScreen.storyboard */; };
-		DFDCB26820ACA82A00C83082 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDCB26720ACA82A00C83082 /* CustomTableViewCell.xib */; };
-		DFDCB26A20ACAA8200C83082 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCB26920ACAA8200C83082 /* CustomTableViewCell.swift */; };
+		DFDCB26820ACA82A00C83082 /* LibraryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDCB26720ACA82A00C83082 /* LibraryTableViewCell.xib */; };
+		DFDCB26A20ACAA8200C83082 /* LibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCB26920ACAA8200C83082 /* LibraryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD523FEA20AD5C1E0041729C /* LibraryList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LibraryList.json; sourceTree = "<group>"; };
+		BD523FF420AD602E0041729C /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
+		BD523FF620AD61530041729C /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		BD523FFA20AD645E0041729C /* LibraryListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryListCellViewModel.swift; sourceTree = "<group>"; };
 		DFDCB24D20ACA4CC00C83082 /* MVVMSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFDCB25020ACA4CC00C83082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFDCB25220ACA4CC00C83082 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +32,8 @@
 		DFDCB25720ACA4CE00C83082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFDCB25A20ACA4CE00C83082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFDCB25C20ACA4CE00C83082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DFDCB26720ACA82A00C83082 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
-		DFDCB26920ACAA8200C83082 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		DFDCB26720ACA82A00C83082 /* LibraryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryTableViewCell.xib; sourceTree = "<group>"; };
+		DFDCB26920ACAA8200C83082 /* LibraryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD523FEE20AD5C9E0041729C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD523FF620AD61530041729C /* Library.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD523FEF20AD5DBE0041729C /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
+		BD523FF820AD61C70041729C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD523FF420AD602E0041729C /* ViewControllerViewModel.swift */,
+				BD523FFA20AD645E0041729C /* LibraryListCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BD523FF920AD61EA0041729C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFDCB26220ACA56200C83082 /* UIViewController */,
+				DFDCB26320ACA57300C83082 /* UITableViewCell */,
+				BD523FEF20AD5DBE0041729C /* UICollectionViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DFDCB24420ACA4CC00C83082 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +100,11 @@
 		DFDCB24F20ACA4CC00C83082 /* MVVMSample */ = {
 			isa = PBXGroup;
 			children = (
+				BD523FEE20AD5C9E0041729C /* Model */,
+				BD523FF920AD61EA0041729C /* View */,
+				BD523FF820AD61C70041729C /* ViewModel */,
 				DFDCB26520ACA58F00C83082 /* Assets */,
 				DFDCB26420ACA58300C83082 /* Storyboard */,
-				DFDCB26220ACA56200C83082 /* UIViewController */,
-				DFDCB26320ACA57300C83082 /* UITableViewCell */,
-				DFDCB26620ACA5C400C83082 /* UICollectionViewCell */,
 				DFDCB25020ACA4CC00C83082 /* AppDelegate.swift */,
 				DFDCB25C20ACA4CE00C83082 /* Info.plist */,
 			);
@@ -80,8 +122,8 @@
 		DFDCB26320ACA57300C83082 /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				DFDCB26720ACA82A00C83082 /* CustomTableViewCell.xib */,
-				DFDCB26920ACAA8200C83082 /* CustomTableViewCell.swift */,
+				DFDCB26720ACA82A00C83082 /* LibraryTableViewCell.xib */,
+				DFDCB26920ACAA8200C83082 /* LibraryTableViewCell.swift */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -99,15 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				DFDCB25720ACA4CE00C83082 /* Assets.xcassets */,
+				BD523FEA20AD5C1E0041729C /* LibraryList.json */,
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		DFDCB26620ACA5C400C83082 /* UICollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UICollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +206,9 @@
 			files = (
 				DFDCB25B20ACA4CE00C83082 /* LaunchScreen.storyboard in Resources */,
 				DFDCB25820ACA4CE00C83082 /* Assets.xcassets in Resources */,
-				DFDCB26820ACA82A00C83082 /* CustomTableViewCell.xib in Resources */,
+				DFDCB26820ACA82A00C83082 /* LibraryTableViewCell.xib in Resources */,
 				DFDCB25620ACA4CC00C83082 /* Main.storyboard in Resources */,
+				BD523FEB20AD5C1E0041729C /* LibraryList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFDCB26A20ACAA8200C83082 /* CustomTableViewCell.swift in Sources */,
+				BD523FF520AD602E0041729C /* ViewControllerViewModel.swift in Sources */,
+				BD523FFB20AD645E0041729C /* LibraryListCellViewModel.swift in Sources */,
+				BD523FF720AD61530041729C /* Library.swift in Sources */,
+				DFDCB26A20ACAA8200C83082 /* LibraryTableViewCell.swift in Sources */,
 				DFDCB25320ACA4CC00C83082 /* ViewController.swift in Sources */,
 				DFDCB25120ACA4CC00C83082 /* AppDelegate.swift in Sources */,
 			);
