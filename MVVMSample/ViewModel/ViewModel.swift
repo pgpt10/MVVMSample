@@ -1,5 +1,5 @@
 //
-//  ViewControllerViewModel.swift
+//  ViewModel.swift
 //  MVVMSample
 //
 //  Created by Payal Gupta on 17/05/18.
@@ -8,27 +8,23 @@
 
 import Foundation
 
-class ViewControllerViewModel
+class ViewModel
 {
     //MARK: Private Properties
-    private var cellModels = [Library](){
+    private var libraries = [Library](){
         didSet{
-            
+            self.reloadTableViewClosure?()
         }
     }
     private var isLoading = false{
         didSet{
-            self.updateLoadingStatus?()
+            self.updateLoadingStatus?(self.isLoading)
         }
     }
     
     //MARK: Internal Properties
     var reloadTableViewClosure: (()->())?
-    var updateLoadingStatus: (()->())?
-    
-    var numberOfCells: Int{
-        return self.cellModels.count
-    }
+    var updateLoadingStatus: ((Bool)->())?
     
     //MARK: Initializer
     init()
@@ -36,23 +32,30 @@ class ViewControllerViewModel
         self.fetchLibraryList()
     }
     
-    //MARK: Internal Methods
-    func getModel(at indexPath: IndexPath) -> Library
-    {
-        return self.cellModels[indexPath.row]
-    }
-    
     //MARK: Private Methods
-    func fetchLibraryList()
+    private func fetchLibraryList()
     {
         self.isLoading = true
         if let path = Bundle.main.path(forResource: "LibraryList", ofType: "json")
         {
-            if let libraryList = try? JSONDecoder().decode([Library].self, from: Data.init(contentsOf: URL(fileURLWithPath: path)))
+            if let libraryList = try? JSONDecoder().decode([Library].self, from: Data(contentsOf: URL(fileURLWithPath: path)))
             {
+                self.libraries = libraryList
                 self.isLoading = false
-                self.cellModels = libraryList
             }
         }
+    }
+}
+
+//MARK: - Helper Properties and Methods
+extension ViewModel
+{
+    var numberOfLibraries: Int{
+        return self.libraries.count
+    }
+
+    func getLibrary(at indexPath: IndexPath) -> Library
+    {
+        return self.libraries[indexPath.row]
     }
 }

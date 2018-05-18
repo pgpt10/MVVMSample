@@ -15,7 +15,7 @@ class ViewController: UIViewController
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     //MARK: Private Properties
-    let viewModel = ViewControllerViewModel()
+    let viewModel = ViewModel()
     
     //MARK: Lifecycle Methods
     override func viewDidLoad()
@@ -27,7 +27,18 @@ class ViewController: UIViewController
                 self?.tableView.reloadData()
             }
         }
-        self.viewModel.fetchLibraryList()
+        self.viewModel.updateLoadingStatus = {[weak self](isLoading) in
+            DispatchQueue.main.async {
+                if isLoading
+                {
+                    self?.activityIndicator.startAnimating()
+                }
+                else
+                {
+                    self?.activityIndicator.stopAnimating()
+                }
+            }
+        }
     }
 }
 
@@ -36,25 +47,25 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return self.viewModel.numberOfCells
+        return self.viewModel.numberOfLibraries
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LibraryTableViewCell", for: indexPath) as! LibraryTableViewCell
-        let cellModel = self.viewModel.getModel(at: indexPath)
+        let cellModel = self.viewModel.getLibrary(at: indexPath)
         cell.configure(with: cellModel)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        return UITableViewAutomaticDimension
+        return UITableViewAutomaticDimension //TODO: where to write this?
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        return 100.0
+        return 100.0 //TODO: where to write this?
     }
 }
 

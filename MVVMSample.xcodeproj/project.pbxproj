@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BD523FEB20AD5C1E0041729C /* LibraryList.json in Resources */ = {isa = PBXBuildFile; fileRef = BD523FEA20AD5C1E0041729C /* LibraryList.json */; };
-		BD523FF520AD602E0041729C /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD523FF420AD602E0041729C /* ViewControllerViewModel.swift */; };
+		BD523FF520AD602E0041729C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD523FF420AD602E0041729C /* ViewModel.swift */; };
 		BD523FF720AD61530041729C /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD523FF620AD61530041729C /* Library.swift */; };
-		BD523FFB20AD645E0041729C /* LibraryListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD523FFA20AD645E0041729C /* LibraryListCellViewModel.swift */; };
 		DFDCB25120ACA4CC00C83082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCB25020ACA4CC00C83082 /* AppDelegate.swift */; };
 		DFDCB25320ACA4CC00C83082 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCB25220ACA4CC00C83082 /* ViewController.swift */; };
 		DFDCB25620ACA4CC00C83082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDCB25420ACA4CC00C83082 /* Main.storyboard */; };
@@ -22,9 +21,8 @@
 
 /* Begin PBXFileReference section */
 		BD523FEA20AD5C1E0041729C /* LibraryList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LibraryList.json; sourceTree = "<group>"; };
-		BD523FF420AD602E0041729C /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
+		BD523FF420AD602E0041729C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		BD523FF620AD61530041729C /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
-		BD523FFA20AD645E0041729C /* LibraryListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryListCellViewModel.swift; sourceTree = "<group>"; };
 		DFDCB24D20ACA4CC00C83082 /* MVVMSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFDCB25020ACA4CC00C83082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFDCB25220ACA4CC00C83082 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,8 +63,7 @@
 		BD523FF820AD61C70041729C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				BD523FF420AD602E0041729C /* ViewControllerViewModel.swift */,
-				BD523FFA20AD645E0041729C /* LibraryListCellViewModel.swift */,
+				BD523FF420AD602E0041729C /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -219,8 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD523FF520AD602E0041729C /* ViewControllerViewModel.swift in Sources */,
-				BD523FFB20AD645E0041729C /* LibraryListCellViewModel.swift in Sources */,
+				BD523FF520AD602E0041729C /* ViewModel.swift in Sources */,
 				BD523FF720AD61530041729C /* Library.swift in Sources */,
 				DFDCB26A20ACAA8200C83082 /* LibraryTableViewCell.swift in Sources */,
 				DFDCB25320ACA4CC00C83082 /* ViewController.swift in Sources */,
