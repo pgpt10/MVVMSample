@@ -10,6 +10,8 @@
 		BD523FEB20AD5C1E0041729C /* LibraryList.json in Resources */ = {isa = PBXBuildFile; fileRef = BD523FEA20AD5C1E0041729C /* LibraryList.json */; };
 		BD523FF520AD602E0041729C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD523FF420AD602E0041729C /* ViewModel.swift */; };
 		BD523FF720AD61530041729C /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD523FF620AD61530041729C /* Library.swift */; };
+		DF35672120B1DE730068E3D0 /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF35672020B1DE730068E3D0 /* TableHeaderView.xib */; };
+		DF35672320B1DECB0068E3D0 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF35672220B1DECB0068E3D0 /* TableHeaderView.swift */; };
 		DFDCB25120ACA4CC00C83082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCB25020ACA4CC00C83082 /* AppDelegate.swift */; };
 		DFDCB25320ACA4CC00C83082 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCB25220ACA4CC00C83082 /* ViewController.swift */; };
 		DFDCB25620ACA4CC00C83082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDCB25420ACA4CC00C83082 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		BD523FEA20AD5C1E0041729C /* LibraryList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LibraryList.json; sourceTree = "<group>"; };
 		BD523FF420AD602E0041729C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		BD523FF620AD61530041729C /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		DF35672020B1DE730068E3D0 /* TableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderView.xib; sourceTree = "<group>"; };
+		DF35672220B1DECB0068E3D0 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 		DFDCB24D20ACA4CC00C83082 /* MVVMSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFDCB25020ACA4CC00C83082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFDCB25220ACA4CC00C83082 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,13 +57,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		BD523FEF20AD5DBE0041729C /* UICollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UICollectionViewCell;
-			sourceTree = "<group>";
-		};
 		BD523FF820AD61C70041729C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +70,6 @@
 			children = (
 				DFDCB26220ACA56200C83082 /* UIViewController */,
 				DFDCB26320ACA57300C83082 /* UITableViewCell */,
-				BD523FEF20AD5DBE0041729C /* UICollectionViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,6 +117,8 @@
 			children = (
 				DFDCB26720ACA82A00C83082 /* LibraryTableViewCell.xib */,
 				DFDCB26920ACAA8200C83082 /* LibraryTableViewCell.swift */,
+				DF35672020B1DE730068E3D0 /* TableHeaderView.xib */,
+				DF35672220B1DECB0068E3D0 /* TableHeaderView.swift */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -205,6 +203,7 @@
 				DFDCB25820ACA4CE00C83082 /* Assets.xcassets in Resources */,
 				DFDCB26820ACA82A00C83082 /* LibraryTableViewCell.xib in Resources */,
 				DFDCB25620ACA4CC00C83082 /* Main.storyboard in Resources */,
+				DF35672120B1DE730068E3D0 /* TableHeaderView.xib in Resources */,
 				BD523FEB20AD5C1E0041729C /* LibraryList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF35672320B1DECB0068E3D0 /* TableHeaderView.swift in Sources */,
 				BD523FF520AD602E0041729C /* ViewModel.swift in Sources */,
 				BD523FF720AD61530041729C /* Library.swift in Sources */,
 				DFDCB26A20ACAA8200C83082 /* LibraryTableViewCell.swift in Sources */,

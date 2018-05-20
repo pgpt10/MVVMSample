@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TgV-gU-brG">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TgV-gU-brG">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -27,8 +27,8 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="M3a-hg-ZuH"/>
                                 </connections>
                             </tableView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Kjd-UD-W54">
-                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Kjd-UD-W54">
+                                <rect key="frame" x="169" y="325" width="37" height="37"/>
                                 <color key="color" red="0.20000000000000001" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
@@ -36,13 +36,14 @@
                         <constraints>
                             <constraint firstItem="TgV-gU-brG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6NI-eD-yip"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TgV-gU-brG" secondAttribute="trailing" id="S6F-ZF-xO7"/>
-                            <constraint firstItem="Kjd-UD-W54" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gEE-yS-IGh"/>
+                            <constraint firstItem="Kjd-UD-W54" firstAttribute="centerY" secondItem="TgV-gU-brG" secondAttribute="centerY" id="aXE-6a-Stm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TgV-gU-brG" secondAttribute="bottom" id="eFM-M3-cnL"/>
                             <constraint firstItem="TgV-gU-brG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hfO-Sl-X1v"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TgV-gU-brG" secondAttribute="bottom" id="xk2-oQ-nuc"/>
-                            <constraint firstItem="Kjd-UD-W54" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zI7-ip-Pdm"/>
+                            <constraint firstItem="Kjd-UD-W54" firstAttribute="centerX" secondItem="TgV-gU-brG" secondAttribute="centerX" id="kUQ-al-KQh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hAB-Dw-exh"/>
                     <connections>
                         <outlet property="activityIndicator" destination="Kjd-UD-W54" id="Tx2-gM-b0s"/>
                         <outlet property="tableView" destination="TgV-gU-brG" id="nIk-lO-wSH"/>
@@ -50,6 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1247" y="-405"/>
         </scene>
     </scenes>
 </document>

@@ -15,12 +15,18 @@ class ViewController: UIViewController
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     //MARK: Private Properties
-    let viewModel = ViewModel()
+    private let viewModel = ViewModel()
+    private lazy var headerView: UIView? = {[weak self] in
+        let header = Bundle.main.loadNibNamed("TableHeaderView", owner: self, options: nil)?.first as? TableHeaderView
+        header?.headerLabel.text = self?.viewModel.tableHeader
+        return header
+    }()
     
     //MARK: Lifecycle Methods
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        self.tableView.tableHeaderView = self.headerView
         self.tableView.register(UINib(nibName: "LibraryTableViewCell", bundle: nil), forCellReuseIdentifier: "LibraryTableViewCell")
         self.viewModel.reloadTableViewClosure = {[weak self] in
             DispatchQueue.main.async {

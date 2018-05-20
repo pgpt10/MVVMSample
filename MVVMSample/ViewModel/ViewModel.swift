@@ -1,3 +1,4 @@
+
 //
 //  ViewModel.swift
 //  MVVMSample
@@ -25,6 +26,7 @@ class ViewModel
     //MARK: Internal Properties
     var reloadTableViewClosure: (()->())?
     var updateLoadingStatus: ((Bool)->())?
+    var tableHeader = "Library List"
     
     //MARK: Initializer
     init()

@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LibraryTableViewCell" rowHeight="114" id="ME2-gp-7Pm" customClass="LibraryTableViewCell" customModule="MVVMSample" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="LibraryTableViewCell" rowHeight="114" id="ME2-gp-7Pm" customClass="LibraryTableViewCell" customModule="MVVMSample" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ME2-gp-7Pm" id="gt6-XR-I5N">
@@ -32,6 +32,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="0.74991973458904104" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="yI8-ax-A21" firstAttribute="top" secondItem="U8S-Xx-pXQ" secondAttribute="bottom" constant="8" id="0Bq-Zn-Cf4"/>
                     <constraint firstAttribute="bottom" secondItem="yI8-ax-A21" secondAttribute="bottom" constant="8" id="GqB-XC-PtW"/>
